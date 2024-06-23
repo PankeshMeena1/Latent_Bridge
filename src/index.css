@@ -1,0 +1,95 @@
+/* Basic reset and default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1eeee;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130vh;
+}
+
+/* Main container */
+.app {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #afacac;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Button styling */
+.random-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.random-button:hover {
+  background-color: #0056b3;
+}
+
+/* Loader styling */
+.loader {
+  text-align: center;
+  font-size: 18px;
+  color: #007bff;
+}
+
+/* Comment list styling */
+.comment-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comment-item {
+  background-color: rgb(218, 224, 223);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.comment-item:hover {
+  transform: translateY(-5px);
+}
+
+.comment-item p {
+  margin: 10px 0;
+}
+
+.comment-item strong {
+  color: #007bff;
+}
